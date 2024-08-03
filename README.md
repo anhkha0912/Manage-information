@@ -4,10 +4,21 @@
 Item management application includes adding, updating, deleting, sorting, and searching functions
 
 **Demo: [manage-information.vercel.app](https://manage-information.vercel.app/)**
-- Note: Please run mock server to use demo( install json-server -> faker -> run mock server)
-- Install json-server: `npm install --save json-server`
-- Install faker: `npm install faker @5.5.3`
-- Run mock server: `json-server --watch ./server/database.json`
+- Note: Please run mock server to use demo
+- Install dependencies: 
+```shell
+npm i
+```
+
+- Run mock server: 
+```shell
+npm run server
+```
+
+- Run client Angular to run code local:
+```shell
+npm run start
+```
 ----------------------------------------------------------------------------------
 - Angular CLI: 18.1.3
 - Node: 20
