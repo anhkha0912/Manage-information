@@ -1,10 +1,9 @@
-# ManageInfomation
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
 
 # Manage-information
 
 Item management application includes adding, updating, deleting, sorting, and searching functions
+
+**Demo: [manage-information.vercel.app](https://manage-information.vercel.app/)**
 
 Angular CLI: 18.1.3
 Node: 20.16.0
