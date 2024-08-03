@@ -1,0 +1,53 @@
+<form [formGroup]="itemForm" class="text-center overflow-hidden">
+  <div mat-dialog-title class="max-w-sm mx-auto">
+    <label class="font-bold content-center text-2xl">Add New Item</label>
+  </div>
+  <div class="grid grid-cols-2at max-[600px]:grid-cols-at grid-rows-auto gap-16px px-5px">
+    <mat-form-field appearance="fill" class="text-center">
+      <mat-label>ID</mat-label>
+      <input matInput formControlName="id" type="text" />
+      @if (this.itemForm.controls.id.invalid) {
+        <mat-error>{{ errorMessage(this.itemForm.controls.id) }}</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="text-center">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" type="text" />
+      @if (this.itemForm.controls.name.invalid) {
+        <mat-error>{{ errorMessage(this.itemForm.controls.name) }}</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="text-center">
+      <mat-label>Type</mat-label>
+      <input matInput formControlName="type" type="text" />
+      @if (this.itemForm.controls.type.invalid) {
+        <mat-error>{{ errorMessage(this.itemForm.controls.type) }}</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="text-center">
+      <mat-label>Category</mat-label>
+      <input matInput formControlName="category" type="text" />
+      @if (this.itemForm.controls.category.invalid) {
+        <mat-error>{{ errorMessage(this.itemForm.controls.category) }}</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="text-center">
+      <mat-label>Price</mat-label>
+      <input matInput formControlName="price" type="number" />
+      @if (this.itemForm.controls.price.invalid) {
+        <mat-error>{{ errorMessage(this.itemForm.controls.price) }}</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="text-center">
+      <mat-label>Description</mat-label>
+      <input matInput formControlName="description" type="text" />
+      @if (this.itemForm.controls.description.invalid) {
+        <mat-error>{{ errorMessage(this.itemForm.controls.description) }}</mat-error>
+      }
+    </mat-form-field>
+  </div>
+  <div class="mt-2 flex space-x-4 justify-center pb-5px">
+    <button type="submit" (click)="onAdd()" mat-raised-button color="success">Add</button>
+    <button type="submit" (click)="onClose()" mat-raised-button color="warn">Close</button>
+  </div>
+</form>
